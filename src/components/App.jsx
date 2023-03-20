@@ -1,16 +1,16 @@
-export const App = () => {
+export const App = ({ children }) => {
   return (
     <div
       style={{
-        height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        flexDirection: 'column',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
-      React homework template
+      {children}
     </div>
   );
 };
